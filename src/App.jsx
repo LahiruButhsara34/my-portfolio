@@ -28,23 +28,39 @@ function App() {
     projects: [
       {
         title: "ETH/SOL Cryptocurrency Price Predictor (Deep LSTM)",
-        tech: "Python, Flask, TensorFlow/Keras, LSTM, yfinance API, Scikit-learn",
-        desc: "Built an end-to-end web application to forecast crypto prices up to 4 years ahead using a 4-layer funnel Deep LSTM neural network with time-series modeling."
+        tech: "Python, Flask, TensorFlow/Keras, LSTM, yfinance API, Scikit-learn, HTML/CSS",
+        desc: "Built an end-to-end web application to forecast crypto prices up to 4 years ahead using a 4-layer funnel Deep LSTM neural network with time-series modeling (90-day look-back window).",
+        github: "https://github.com/LahiruButhsara34/ETH-SOL-Price-Predictor"
+      },
+      {
+        title: "Cat & Dog Image Classification (CNN)",
+        tech: "Python, OpenCV, TensorFlow/Keras, CNN, Computer Vision",
+        desc: "Developed a 3-block CNN architecture with Batch Normalization and Dropout layers for binary image classification. Integrated OpenCV for real-time camera inference with confidence thresholding logic.",
+        github: "https://github.com/LahiruButhsara34"
       },
       {
         title: "CardioPulse AI - Heart Disease Risk Predictor",
         tech: "Python, TensorFlow, Keras, Flask, Scikit-Learn",
-        desc: "Developed a Feedforward Neural Network (FFNN) model using 7 clinical features to predict heart disease risk levels with loss-based model checkpointing."
+        desc: "Developed a Feedforward Neural Network (FFNN) model using 7 clinical features to predict heart disease risk levels with loss-based model checkpointing.",
+        github: "https://github.com/LahiruButhsara34/CardioPulse-AI"
       },
       {
-        title: "Data Jobs Market Dashboard & Business Analytics",
-        tech: "Power BI, SQL, Python, Business Intelligence",
-        desc: "Engineered interactive Power BI dashboards to analyze job market trends, salaries, and employment types. Executed SQL queries and Python EDA for customer segmentation and business insights."
-      },
-      {
-        title: "Laptop Price Predictor",
+        title: "Laptop Price Predictor (Machine Learning & Flask)",
         tech: "Python, Scikit-learn, Random Forest Regressor, Flask, Pandas, NumPy",
-        desc: "Trained and optimized a Random Forest Regressor using GridSearchCV (R² ≈ 0.79) to predict laptop prices and deployed as a responsive Flask web app."
+        desc: "Trained and optimized a Random Forest Regressor using GridSearchCV (R² ≈ 0.79) to predict laptop prices based on technical specifications and deployed as a responsive Flask app.",
+        github: "https://github.com/LahiruButhsara34/Laptop-Price-Predictor"
+      },
+      {
+        title: "Customer Shopping Behavior Analytics",
+        tech: "Python, SQL, Power BI, Data Analytics",
+        desc: "Simulated corporate-grade transactions and wrote SQL queries to extract key findings on customer segments, loyalty, and purchase drivers. Created executive visualization dashboards.",
+        github: "https://github.com/LahiruButhsara34/Customer-Shopping-Behavior-Analysis"
+      },
+      {
+        title: "Data Jobs Market Dashboard (Power BI)",
+        tech: "Power BI, Business Intelligence, Data Visualization",
+        desc: "Built an interactive two-page Power BI dashboard to analyze job market trends, salaries, employment types, and platforms using KPI cards, Treemaps, Line/Scatter plots, and interactive slicers.",
+        github: "https://github.com/LahiruButhsara34/PowerBI-Data-Jobs-Dashboard-"
       }
     ],
     education: [
@@ -83,7 +99,7 @@ function App() {
 
           <div className="social-links">
             <a href={profileData.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href={profileData.github} target="_blank" rel="noreferrer">GitHub</a>
+            <a href={profileData.github} target="_blank" rel="noreferrer">GitHub Profile</a>
           </div>
         </div>
       </header>
@@ -125,6 +141,16 @@ function App() {
                 <h3>{proj.title}</h3>
                 <span className="tech-badge">{proj.tech}</span>
                 <p>{proj.desc}</p>
+                {proj.github && (
+                  <a 
+                    href={proj.github} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="project-link"
+                  >
+                    View Code on GitHub →
+                  </a>
+                )}
               </div>
             ))}
           </div>
