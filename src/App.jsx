@@ -36,7 +36,7 @@ function App() {
         title: "Cat & Dog Image Classification (CNN)",
         tech: "Python, OpenCV, TensorFlow/Keras, CNN, Computer Vision",
         desc: "Developed a 3-block CNN architecture with Batch Normalization and Dropout layers for binary image classification. Integrated OpenCV for real-time camera inference with confidence thresholding logic.",
-        github: "https://github.com/LahiruButhsara34"
+        github: "https://github.com/LahiruButhsara34/Image-Classification-for-Cat-and-Dog"
       },
       {
         title: "CardioPulse AI - Heart Disease Risk Predictor",
