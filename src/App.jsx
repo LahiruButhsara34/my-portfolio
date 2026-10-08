@@ -51,7 +51,7 @@ function App() {
         github: "https://github.com/LahiruButhsara34/Laptop-Price-Predictor"
       },
       {
-        title: "Customer Shopping Behavior Analytics",
+        title: "Customer Shopping Behavior Analysis",
         tech: "Python, SQL, Power BI, Data Analytics",
         desc: "Simulated corporate-grade transactions and wrote SQL queries to extract key findings on customer segments, loyalty, and purchase drivers. Created executive visualization dashboards.",
         github: "https://github.com/LahiruButhsara34/Customer-Shopping-Behavior-Analysis"
