@@ -8,7 +8,8 @@ function App() {
     location: "Panadura, Sri Lanka",
     phone: "+94 702359796",
     email: "lahirubuthsarawijesekara@gmail.com",
-    
+    linkedin: "https://linkedin.com/in/lahirubuthsara34",
+    github: "https://github.com/LahiruButhsara34",
     summary: "Highly motivated Computer Science and Mathematics graduate from the University of Sri Jayewardenepura. Strong technical background in Machine Learning, Deep Learning (LSTM, CNN, FFNN), Data Analytics, and Business Intelligence. Passionate about applying mathematical optimization, algorithmic problem-solving, and data-driven insights to build actionable AI solutions and business analytics applications.",
     skills: {
       ml_ai: [
